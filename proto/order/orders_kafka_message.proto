@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package proto.order;
+
+option go_package = "github.com/moguchev/kafka/pkg/proto/order";
+
+// В один кафка топик можно отправлять сообщения только ОДНОГО типа (напрмиер message Order)
+message Order {
+    int64 id = 1;
+}
